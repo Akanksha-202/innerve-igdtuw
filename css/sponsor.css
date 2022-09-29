@@ -14,6 +14,7 @@ body{
     background-attachment: fixed;
     font:  #BAB0EA;
     margin: 0px;
+    overflow-x: hidden;
 }
 
 .scrolled {
@@ -98,22 +99,23 @@ footer .social_icon li a:hover {
 
 .container .card img{
     position: absolute;
-    bottom: 0;
+    /* bottom: 20%; */
     left: 50%;
     transform: translateX(-50%);
-    height: 400px;
-    transition: 0.5s;
+    height: 200px;
+    transition: 1s;
 }
 
 .container .card:hover img{
-    left: 73%;
-    height: 500px;
+    bottom: 50%;
+    height: 240px;
 }
 
 .container .card .content{
     position: relative;
     width: 40%;
-    left: 20%;
+    margin: auto;
+    top: 10%;
     padding: 20px 20px 20px 10px;
     opacity: 0;
     visibility: hidden;
@@ -121,7 +123,7 @@ footer .social_icon li a:hover {
 }
 
 .container .card:hover .content{
-    left: 0;
+    top: 25%;
     opacity: 1;
     visibility: visible;
 }
@@ -132,7 +134,6 @@ footer .social_icon li a:hover {
     text-transform: uppercase;
     font-size: 2.2em;
     line-height: 1em;
-
 }
 
 .container .card .content p{
@@ -152,17 +153,13 @@ footer .social_icon li a:hover {
 
 @media (max-width: 991px){
     .container .card{
-        width: auto;
+        width: 300px;
         max-width: 600px;
-        align-items: flex-start;
-    }
-    .container .card:hover{
-        height: 600px;
-
+        /* align-items: flex-start; */
     }
     .container .card:hover img{
         left: 50%;
-        height: 350px;
+        height: 200px;
     }
     .container .card .content{
         width: 100%;
@@ -191,11 +188,11 @@ footer .social_icon li a:hover {
         margin-top: 25%;
     }
 
-    .container .card .content{
+    /* .container .card .content{
         padding: 30px;
-    }
+    }*/
 
-    .container .card:hover img{
-        height: 300px;
-    }
+    /* .container .card img{
+        height: 140px;
+    }   */
 }
